@@ -78,3 +78,20 @@ on there)
 		$ git branch
 # This will show all of your current branches on your local.
 And now, let's working!
+
+**Merge branch**
+- After finishing some features, you want to merge it to other features that you've already finished, but how can we do it? It's merge time!
+Let's merge something together!
+	- step 1: checking your current branch
+	- step 2: merge time!
+		$ git merge <branchname>
+	exp: you want to merge feature-1 branch with feature-2 and you're currently on feature-1 branch
+		$ git merge feature-2
+# This will merge your feature-2 branch into feature-1 branch.
+	- step 3: tidy your place!
+		$ git branch -d "branchname"
+# Delete your branches that you dont need it anymore!
+	- step 4: not just on your local but also the remote!
+		$ git push <remote name> -d <branch name>
+		// git push <remote name> --delete <branch name>
+# Delete your branches on remote that you dont need!
