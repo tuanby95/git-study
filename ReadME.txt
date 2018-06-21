@@ -62,3 +62,19 @@ onto your computer
 	$ git pull <remotename> <branchname>
 * Tips: if the bug: "refusing to merge unrelated histories" appeared, you can use this command:
 	$ git pull <remotename> <branchname> --allow-unrelated-histories
+
+***Forks and branches***
+- When you start to work on a project with other people, you should make a workplace for your own and that is when branch
+is needed. Create your own branch and start working!
++ How to create a branch
+	- step 1: on GitHub, go to your project and create a new branch at your master branch (there is a button branch
+on there)
+	- step 2: back to your terminal, go to your working directory, and type:
+		$ git branch <branchname>
+# This will create a new branch on your local.
+	- step 3: synx your new local branch with your new online branch.
+		$ git checkout <branchname>
+		+ To check what branch are you on, type:
+		$ git branch
+# This will show all of your current branches on your local.
+And now, let's working!
